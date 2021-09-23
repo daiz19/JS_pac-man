@@ -11,43 +11,57 @@
     width: 20px;
     height: 20px
 }
+.wall {
+    background-color:midnightblue;
+}
 
 .pac-dot {
     background-color:gold;
     border: 8px solid black;
-    box-sizing:border-box;
-}
-
-.wall {
-    background-color:darkblue;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .power {
     background-color: pink;
+    border: 3px solid black;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .pac-man {
     background-color: yellow;
     border-radius: 10px;
+    /* background-image: url(pacman.png);
+    background-size: 20px; */
 }
 
 .blinky {
     background-color: red;
+    border-radius: 100% 100% 0 0;
+    border: 0px;
 }
 
 .pinky {
-    border-color: pink;
+    background-color: pink;
+    border-radius: 100% 100% 0 0;
+    border: 0px;
 }
 
 .inky {
-    border-color: cyan;
+    background-color: cyan;
+    border-radius: 100% 100% 0 0;
+    border: 0px;
 }
 
 .clyde {
     background-color: orange;
+    border-radius: 100% 100% 0 0;
+    border: 0px;
 }
 
-.ghost {
+.scared-ghost {
     background-color: aquamarine;
+    border-radius: 100% 100% 0 0;
+    border: 0px;
 }
