@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded',() => {
         if (squares[pacmanCurrentIndex].classList.contains('ghost') &&
             !squares[pacmanCurrentIndex].classList.contains('scared-ghost')) {
             ghosts.forEach(ghost => clearInterval(ghost.timerId))
-            document.removeEventListener('keyup'.movePacman)
+            document.removeEventListener('keyup',movePacman)
             setTimeout(function () { alert('Game Over'); },500)
         }
     }
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded',() => {
         if (score === 300) {
             ghosts.forEach(ghost => clearInterval(ghost.timerId))
             document.removeEventListener('keyup',movePacman)
-            setTimeout(function () { alert('You WIN!'); },500)
+            setTimeout(function () { alert('You Win!'); },500)
         }
     }
 })
